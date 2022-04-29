@@ -1,24 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
 typedef struct
 {
 int id ;
 char name [ 50 ] ;
 int crns [ 5 ] ;
 } student ;
-
+void fun ( student a , student b ) ;
 int main () {
-student s1 , *p ;
-p = &s1 ;
-s1 . id = 333;
-strcpy ( s1 . name , "Rouicha" ) ;
-printf("%c%d" , (*p ) . name [ 0 ] , p->id ) ;
+student a , b ;
+int i ;
+a . id = 111;
+b . id = 333;
+fun ( a , b ) ;
+printf ("%d" , a . id ) ;
 return 0;
-
 }
-
-
-
+void fun ( student a , student b )
+{
+a = b ;
+}

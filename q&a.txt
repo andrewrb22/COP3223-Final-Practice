@@ -314,3 +314,112 @@ return 0;
 }
 ANSWER = R333
 -----------------------------------
+30.
+typedef struct
+{
+int id ;
+char name [ 5 0 ] ;
+int crns [ 5 ] ;
+} student ;
+void fun ( student [ ] ) ;
+int main () {
+student A[ 1 0 0 ] , *p ;
+p = &A[ 1 ] ;
+p=>id = 333;
+strcpy (p=>name , ”Smith ” ) ;
+fun ( A ) ;
+p r i n t f (”%s %d” , (*p ) . name , p=>id ) ;
+return 0;
+}
+void fun ( student A[ ] )
+{
+strcpy ((*A) . name , ”Johnson ” ) ;
+(*A) . id = 111;
+} ANSWER = smith 333
+-----------------------------------------
+31.
+typedef struct
+{
+int id ;
+char name [ 5 0 ] ;
+int crns [ 5 ] ;
+} student ;
+int main ()
+{
+student a , b ;
+int i ;
+a . id = 111;
+b . id = 333;
+a = b ;
+p r i n t f (”%d” , a . id ) ;
+return 0;
+}
+ANSWER = 333
+---------------------------------------
+32. 
+typedef struct
+{
+int id ;
+char name [ 5 0 ] ;
+int crns [ 5 ] ;
+} student ;
+void fun ( student ) ;
+int main () {
+student A[ 1 0 0 ] , *p ;
+A[ 0 ] . id = 333;
+strcpy (A[ 0 ] . name , ”Smith ” ) ;
+fun ( *A ) ;
+p r i n t f (”%d” , A[ 0 ] . id ) ;
+return 0;
+}
+void fun ( student std )
+{
+std . id = 111;
+}
+ANSWER = 333
+--------------------------------------------
+33.
+typedef struct
+{
+int id ;
+char name [ 5 0 ] ;
+int crns [ 5 ] ;
+} student ;
+int main () {
+student s1 ;
+int i ;
+for ( i= 1; i <5 ; i++)
+{
+i ++;
+i f ( i >= 3 ) s1 . crns [ i ] = 9696;
+e l s e i f ( i <3 ) s1 . crns [ i ] = 4587;
+}
+s1 . crns [ i =2] = 8997;
+p r i n t f (”%d” , s1 . crns [ 4 ] ) ;
+return 0;
+}
+ANSWER = 9696
+-----------------------------------------
+34.
+typedef struct
+{
+int id ;
+char name [ 50 ] ;
+int crns [ 5 ] ;
+} student ;
+void fun ( student a , student b ) ;
+int main () {
+student a , b ;
+int i ;
+a . id = 111;
+b . id = 333;
+fun ( a , b ) ;
+printf ("%d" , a . id ) ;
+return 0;
+}
+void fun ( student a , student b )
+{
+a = b ;
+}
+ANSWER = 111
+--------------------------------------------
