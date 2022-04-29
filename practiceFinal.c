@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-
-int a = 1 , b = 2 , *p = 0;
-p = &a ;
-a = 2;
-p = &b ;
-b = 3;
-printf ("%d" , *p ) ;
-
-return 0;
-
+void fun ( int *p ) ;
+void main ()
+{
+int x [ 1 0 0 ] = { 3 ,2 ,1} ;
+fun (x ) ;
+p r i n t f (”%d” , x [ 0 ] ) ;
 }
+void fun ( int *p)
+{
+*p = 1;
+}
+
+
 
 
