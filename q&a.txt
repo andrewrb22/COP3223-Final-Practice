@@ -110,4 +110,15 @@ printf("%d" , n ) ;
 }
 ANSWER = 88
 ----------------------------------------
+12. int i = 2;
+if ( i > 2)
+printf("one" ) ;
+else
+{
+printf("two" ) ;
+printf("three" ) ;
+}
+printf("four" ) ;
+ANSWER = two three four
+---------------------------------------
 
