@@ -1,10 +1,88 @@
-QUESTIONS
-
+QUESTIONS & ANSWERS
+--------------------------
 1. printf("%.2f",7.0/2) ;
 ANSWER: 3.50
-
+--------------------------
 2. int x =6, y=3 , z=1;
 printf("%d", z+y/x+x);
 ANSWER: 7 z+y = 4 -- 4/x= 1 -- 1+x=7
+--------------------------
+3.int x =3;
+switch( x / 4){
+    case 3: printf("true");
+    case 4: printf("true");
+    break;
+    default:printf("true");
+}
+if(x<3) printf("true");
+ANSWER = true 
+--------------------------
+4.int x = 3;
+if(x == 3 && x <= 3) printf("TRUE") ;
+else printf("FALSE");
 
-3.
+
+return 0;
+ANSWER = TRUE
+----------------------------------
+5.char x ='y';
+if( x == 'Y' || x == 'y' )
+printf ("Yes" ) ;
+printf("No" ) ;
+ANSWER = YesNo
+-----------------------------------
+6.int n = 0;
+for(n = 2; n!=0; n--){
+    printf("*");
+
+}
+if(n<0) printf("%d", n);
+ANSWER = ** , THE VALUE OF N DECREASE TWICE BEFORE GETTING TO 0
+---------------------------------------
+7.int n = 3 , x = 10;
+while (n >=1 && x <5)
+{
+n = n + 5;
+if ( n >7 )
+{
+printf("%d" , n ) ;
+}
+break ;
+}
+printf("DONE" ) ;
+
+return 0;
+ANSWER = DONE
+----------------------------------------------
+8.int x = 1 , y = 5;
+switch ( x )
+{
+case 5:
+case 1: printf("UCF" ) ;
+break ;
+default :
+switch ( y )
+{
+case 5:
+case 1: printf("UCF" ) ;
+break ;
+default : printf("UCF" ) ;
+}
+}
+printf("UCF" ) ;
+ANSWER = UCFUCF
+----------------------------------------------------
+9.int n = 3;
+while (n >2)
+{
+n = n + 1;
+if ( n >7 )
+{
+printf("%d" , n ) ;
+break ;
+}
+}
+printf("%d" ,7);
+ANSWER = 87 n hits the if statement on 8 and breaks from the while loop to printf
+-----------------------------------------
+
