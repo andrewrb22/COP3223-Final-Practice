@@ -423,3 +423,25 @@ a = b ;
 }
 ANSWER = 111
 --------------------------------------------
+35.
+typedef struct
+{
+int id ;
+char name [ 5 0 ] ;
+int crns [ 5 ] ;
+} student ;
+void fun ( int ) ;
+int main () {
+student A[ 1 0 0 ] , *p ;
+A[ 0 ] . id = 333;
+strcpy (A[ 0 ] . name , ”Smith ” ) ;
+fun ( A[ 0 ] . id ) ;
+p r i n t f (”%d” , A[ 0 ] . id ) ;
+return 0;
+}
+void fun ( int id )
+{
+id = 111;
+}
+ANSWER = 333
+-----------------------------------

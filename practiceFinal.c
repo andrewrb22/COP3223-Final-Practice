@@ -7,17 +7,16 @@ int id ;
 char name [ 50 ] ;
 int crns [ 5 ] ;
 } student ;
-void fun ( student a , student b ) ;
+void fun ( int ) ;
 int main () {
-student a , b ;
-int i ;
-a . id = 111;
-b . id = 333;
-fun ( a , b ) ;
-printf ("%d" , a . id ) ;
+student A[ 100 ] , *p ;
+A[ 0 ] . id = 333;
+strcpy (A[ 0 ] . name , "jeff" ) ;
+fun ( A[ 0 ] . id ) ;
+printf ("%d" , A[ 0 ] . id ) ;
 return 0;
 }
-void fun ( student a , student b )
+void fun ( int id )
 {
-a = b ;
+id = 111;
 }
