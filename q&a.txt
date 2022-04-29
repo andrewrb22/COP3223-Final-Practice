@@ -85,4 +85,16 @@ break ;
 printf("%d" ,7);
 ANSWER = 87 n hits the if statement on 8 and breaks from the while loop to printf
 -----------------------------------------
+10.int n = 3 , x = 10;
+while (n != 3 && x >5)
+{
+n = n + 5;
+while ( x >6 )
+{
+printf("%d" , n ) ;
+}
+}
+printf("%d" , n ) ;
+ANSWER = 3
+----------------------------------------
 
