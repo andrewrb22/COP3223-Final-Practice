@@ -3,15 +3,12 @@
 
 int main(){
 
-int counter = 0;
-for ( counter = 2 ; counter <10; counter++)
-{
-i f ( counter <5 ) continue ;
-e l s e i f ( counter >=6 ) break ;
-p r i n t f (” Inside Loop ” ) ;
-counter ++;
-}
-p r i n t f (” Outside Loop ” ) ;
+int a = 1 , b = 2 , *p = 0;
+p = &a ;
+a = 2;
+p = &b ;
+b = 3;
+printf ("%d" , *p ) ;
 
 return 0;
 

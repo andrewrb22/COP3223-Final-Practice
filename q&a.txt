@@ -121,4 +121,29 @@ printf("three" ) ;
 printf("four" ) ;
 ANSWER = two three four
 ---------------------------------------
-
+13. int counter = 0;
+for ( counter = 2 ; counter <10; counter++)
+{
+if ( counter <5 ) continue ;
+else if( counter >=6 ) break ;
+printf ("Inside Loop" ) ;
+counter ++;
+}
+printf("Outside Loop" ) ;
+ANSWER = inside loopOutside loop
+---------------------------------------------------
+14.int x , y ;
+x = 1;
+y = 5;
+x = y ;
+y = x ;
+printf ("%d and %d" , x , y ) ;
+ANSWER = 5 and 5 
+-----------------------------------------------
+15.int a = 1 , b = 2 , *p = 0;
+p = &a ;
+a = 2;
+p = &b ;
+b = 3;
+p r i n t f (”%d” , *p ) ;
+ANSWER = 3
