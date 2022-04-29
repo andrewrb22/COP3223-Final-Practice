@@ -1,18 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void fun ( int *p ) ;
+
+void func ( int [ ] , int *, int ) ;
 void main ()
 {
-int x [ 1 0 0 ] = { 3 ,2 ,1} ;
-fun (x ) ;
-p r i n t f (”%d” , x [ 0 ] ) ;
+int a [ 10 ] ={4 ,2 ,1} , b = 2 , c = 4;
+func (&a[2] ,&b , a[0] ) ;
+printf("%d %d %d" , *a , b , c ) ;
 }
-void fun ( int *p)
+void func ( int x [ ] , int *y , int z )
 {
-*p = 1;
+z = *x + *y ;
 }
-
-
-
-
